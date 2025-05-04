@@ -752,7 +752,7 @@ footer{
     text-align:center;
     
 }
-@media only screen and (max-width:768px){
+@media screen and (max-width:768px){
     .container ul li{
         display:flex;
         font-size:20px;
@@ -823,18 +823,18 @@ footer{
 }
 
   }
-  @media only screen and (max-width :435px){
+  @media screen and (max-width :435px){
     .logoo img{
         display:none;
   }
   .container{
     height:15%;
-    width:100%;
+    width:110%;
   }
   .container ul{
     width:100%;
     text-align:center;
-    margin-left:-25px;
+    margin-left:-40px;
   }
   .container ul li{
     width:70%;
@@ -843,25 +843,37 @@ footer{
   .container ul li a{
     text-align:center;
     margin-right:15px;
+    margin-top:-20px;
+    font-size:14px;
   }
   .mainiletisim{
-    width:100%;
-    margin-left:0;
-    height:70%;
+    width:110%;
+    height:100%;
+    margin-left:10px;
   }
   .mainiletisim ul li{
-    font-size:14px;
+    font-size:12px;
   }
   .mainiletisim ul li a{
     font-size:12px;
   }
+  .mainürün h3{
+    font-size:18px;
+  }
+  .mainiletisim h3{
+    font-size:18px;
+  }
+  .mainiletisim p{
+    font-size:12px;
+  }
   .mainpage{
-    height:70%;
+    height:90%;
+    margin-left:15px;
   }
   .mainpage h1{
-    font-size:20px;
+    font-size:18px;
     text-align:left;
-    margin-left:5px;
+    margin-left:20px;
   }
   .mainpage ul{
     margin-left:-22px;
@@ -875,27 +887,33 @@ footer{
     margin-top:20px;
   }
   .anasayfa{
-    width:100%;
+    width:110%;
     display:flex;
-    height:60%;
+    height:65%;
     text-align:center;
 }
 .anasayfa h1{
-    font-size:20px;
+    margin-top:10px;
+    font-size:18px;
     text-align:center;
+    margin-left:15px;
 }
 .anasayfa h3{
     display:flex;
     margin-left:5px;
-    font-size:15px;
+    font-size:13px;
+    margin-top:8px;
 }
   .anasayfa .işleme{
     width:100%;
     text-align:left;
     margin:180px;
-    margin-top:120px;
-    margin-left:-145px;
-    height:65%;
+    margin-top:110px;
+    margin-left:-130px;
+    height:70%;
+  }
+  .anasayfa .işleme p{
+    font-size:12px;
   }
   .mainpage .fa-car{
     font-size:50px;
@@ -971,7 +989,7 @@ color:grey;
 }
 }
 
-@media only screen and (max-width :375px){
+@media screen and (max-width :376px){
     .logoo img{
     display:none;
   }
