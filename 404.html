@@ -4,8 +4,6 @@
     <meta charset="UTF-8" />
     <script>
       var path = decodeURIComponent(window.location.pathname);
-      var hash = window.location.hash;
-
       var map = {
         "/anasayfa.html": "/",
         "/hakkımızda.html": "/about",
@@ -40,15 +38,11 @@
         "/yirmiyediondört.html": "/urunler/1_2714_QT"
       };
 
-      if (map[path]) {
-        // 🔥 HASH ZATEN VARSA TEKRAR EKLEME
-        if (hash && hash.startsWith("#/")) {
-          window.location.replace(hash);
-        } else {
-          window.location.replace("/#" + map[path]);
-        }
+       if (map[path]) {
+        // ❌ HASH EKLEME
+        window.location.replace(map[path]);
       } else {
-        window.location.replace("/#/");
+        window.location.replace("/");
       }
     </script>
   </head>
