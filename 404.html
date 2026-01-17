@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <script>
       var path = decodeURIComponent(window.location.pathname);
+      var hash = window.location.hash;
 
       var map = {
         "/anasayfa.html": "/",
@@ -40,8 +41,12 @@
       };
 
       if (map[path]) {
-        // 🔥 SADECE path
-        window.location.replace("/#" + map[path]);
+        // 🔥 HASH ZATEN VARSA TEKRAR EKLEME
+        if (hash && hash.startsWith("#/")) {
+          window.location.replace(hash);
+        } else {
+          window.location.replace("/#" + map[path]);
+        }
       } else {
         window.location.replace("/#/");
       }
