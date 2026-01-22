@@ -16,6 +16,7 @@ import ServiceDetail from "./components/ServiceDetail";
 import ScrollToTop from "./components/ScrollToTop";
 import Calculate from "./components/Calculate";
 import SertBakirAlasimlari from "./components/SertBakirAlasimlari";
+import LegacyRedirect from "./components/LegacyRedirect";
 
 const App: React.FC = () => {
   return (
@@ -50,6 +51,8 @@ const App: React.FC = () => {
               element={<SertBakirAlasimlari />}
             />
             <Route path="/about" element={<About />} />
+
+              <Route path="*.html" element={<LegacyRedirect />} />
           </Routes>
         </main>
 
