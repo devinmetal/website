@@ -41,21 +41,18 @@ const normalizePath = (path: string) => {
 };
 
 const LegacyRedirect = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
-    const rawHash = location.hash.replace("#", "") || "/";
-    const path = normalizePath(rawHash);
+    const path = normalizePath(pathname);
 
     if (redirectMap[path]) {
       navigate(redirectMap[path], { replace: true });
     } else {
-      // ❗ geçici olarak console'a basalım
-      console.warn("Redirect bulunamadı:", path);
       navigate("/", { replace: true });
     }
-  }, [location, navigate]);
+  }, [pathname, navigate]);
 
   return null;
 };

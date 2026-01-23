@@ -52,7 +52,7 @@ const App: React.FC = () => {
             />
             <Route path="/about" element={<About />} />
 
-              <Route path="*.html" element={<LegacyRedirect />} />
+            <Route path="/*" element={<LegacyRedirect />} />
           </Routes>
         </main>
 
