@@ -5,6 +5,7 @@ const redirectMap: Record<string, string> = {
   "/anasayfa.html": "/",
   "/hakkımızda.html": "/about",
   "/iletisim.html": "/contact",
+  "/çelik.html": "/urunler/takim-celikleri",
   "/urunler.html": "/urunler/takim-celikleri",
   "/alüminyumbronz.html": "/urunler/aluminyum-bronzlari",
   "/bronz.html": "/urunler/kalay-bronzlari",
