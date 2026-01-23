@@ -4,7 +4,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 const redirectMap: Record<string, string> = {
   "/anasayfa.html": "/",
   "/hakkımızda.html": "/about",
-  "/iletisim.html": "/contract",
+  "/iletişim.html": "/contract",
   "/urunler.html": "/urunler/takim-celikleri",
   "/alüminyumbronz.html": "/urunler/aluminyum-bronzlari",
   "/bronz.html": "/urunler/kalay-bronzlari",
